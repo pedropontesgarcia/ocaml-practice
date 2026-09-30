@@ -1,0 +1,4 @@
+(executable
+ (public_name late)
+ (name main)
+ (libraries late))

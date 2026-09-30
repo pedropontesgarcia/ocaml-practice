@@ -1,0 +1,3 @@
+type side =
+  | Buy
+  | Sell

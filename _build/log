@@ -1,0 +1,16 @@
+# dune describe --format sexp --lang 0.1
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /Users/pedro/.cache/dune/db
+# Workspace root: "/Users/pedro/Desktop/ocaml practice"
+# Auto-detected concurrency: 10
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/pedro/.opam/cs4160/bin/ocamlc.opt -config > /var/folders/c2/jdr2gwpj0fq19h2pcqdn0hd00000gp/T/dune_ad6e17_output
