@@ -1,4 +1,4 @@
-open Pqueue
+(* open Pqueue
 
 type side =
   | Buy
@@ -28,7 +28,7 @@ let rec buy_n t n p =
   let min_elem = ReqPqueue.get_min_elt t.sells in
   if min_elem.price <= p then
     let n_remove = Int.min min_elem.qty n in
-    
+    ()
 ;;
 
 let add t req =
@@ -37,4 +37,4 @@ let add t req =
   | Buy -> ()
 ;;
 
-let cancel t id = ReqPqueue.
+let cancel t id = ReqPqueue. *)
