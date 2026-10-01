@@ -13,33 +13,12 @@
 #  ; build_dir = In_build_dir "default"
 #  ; instrument_with = []
 #  }
-$ /Users/pedro/.opam/cs4160/bin/ocamlc.opt -config > /var/folders/c2/jdr2gwpj0fq19h2pcqdn0hd00000gp/T/dune_25595a_output
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlc.opt -short-paths -keep-locs -warn-error +a -w -53 -w -49 -nopervasives -nostdlib -g -bin-annot -bin-annot-occurrences -I lib/.late.objs/byte -no-alias-deps -opaque -o lib/.late.objs/byte/late.cmo -c -impl lib/late.ml-gen)
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamldep.opt -modules -impl lib/pq.ml) > _build/default/lib/.late.objs/late__Pq.impl.d
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamldep.opt -modules -intf lib/pq.mli) > _build/default/lib/.late.objs/late__Pq.intf.d
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamldep.opt -modules -intf lib/req.mli) > _build/default/lib/.late.objs/late__Req.intf.d
+$ /Users/pedro/.opam/cs4160/bin/ocamlc.opt -config > /var/folders/c2/jdr2gwpj0fq19h2pcqdn0hd00000gp/T/dune_92b89e_output
 $ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamldep.opt -modules -impl lib/req.ml) > _build/default/lib/.late.objs/late__Req.impl.d
-> File "lib/req.ml", line 32, characters 0-2:
-> 32 | ;;
->      ^^
-> Error: Syntax error
-[2]
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlc.opt -short-paths -keep-locs -warn-error +a -g -bin-annot -bin-annot-occurrences -I lib/.late.objs/byte -no-alias-deps -opaque -open Late -o lib/.late.objs/byte/late__Pq.cmi -c -intf lib/pq.mli)
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlc.opt -short-paths -keep-locs -warn-error +a -g -bin-annot -bin-annot-occurrences -I lib/.late.objs/byte -no-alias-deps -opaque -open Late -o lib/.late.objs/byte/late__Req.cmi -c -intf lib/req.mli)
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlopt.opt -short-paths -keep-locs -warn-error +a -g -I lib/.late.objs/byte -I lib/.late.objs/native -cmi-file lib/.late.objs/byte/late__Pq.cmi -no-alias-deps -opaque -open Late -o lib/.late.objs/native/late__Pq.cmx -c -impl lib/pq.ml)
-> File "lib/pq.ml", line 1:
-> Error: The implementation lib/pq.ml does not match the interface lib/pq.mli: 
->        The type t is required but not provided
->        File "lib/pq.mli", line 1, characters 0-6: Expected declaration
-[2]
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlc.opt -short-paths -keep-locs -warn-error +a -g -bin-annot -bin-annot-occurrences -I lib/.late.objs/byte -cmi-file lib/.late.objs/byte/late__Pq.cmi -no-alias-deps -opaque -open Late -o lib/.late.objs/byte/late__Pq.cmo -c -impl lib/pq.ml)
-> File "lib/pq.ml", line 1:
-> Error: The implementation lib/pq.ml does not match the interface lib/pq.mli: 
->        The type t is required but not provided
->        File "lib/pq.mli", line 1, characters 0-6: Expected declaration
-[2]
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlc.opt -short-paths -keep-locs -warn-error +a -g -bin-annot -bin-annot-occurrences -I test/.test_late.eobjs/byte -I lib/.late.objs/byte -no-alias-deps -opaque -o test/.test_late.eobjs/byte/dune__exe__Test_late.cmi -c -intf test/test_late.mli)
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlc.opt -short-paths -keep-locs -warn-error +a -g -bin-annot -bin-annot-occurrences -I bin/.main.eobjs/byte -I lib/.late.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlopt.opt -short-paths -keep-locs -warn-error +a -w -53 -w -49 -nopervasives -nostdlib -g -I lib/.late.objs/byte -I lib/.late.objs/native -cmi-file lib/.late.objs/byte/late.cmi -no-alias-deps -opaque -o lib/.late.objs/native/late.cmx -c -impl lib/late.ml-gen)
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlopt.opt -short-paths -keep-locs -warn-error +a -g -I test/.test_late.eobjs/byte -I test/.test_late.eobjs/native -I lib/.late.objs/byte -I lib/.late.objs/native -cmi-file test/.test_late.eobjs/byte/dune__exe__Test_late.cmi -no-alias-deps -opaque -o test/.test_late.eobjs/native/dune__exe__Test_late.cmx -c -impl test/test_late.ml)
-$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlopt.opt -short-paths -keep-locs -warn-error +a -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.late.objs/byte -I lib/.late.objs/native -cmi-file bin/.main.eobjs/byte/dune__exe__Main.cmi -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlc.opt -short-paths -keep-locs -warn-error +a -g -bin-annot -bin-annot-occurrences -I lib/.late.objs/byte -cmi-file lib/.late.objs/byte/late__Req.cmi -no-alias-deps -opaque -open Late -o lib/.late.objs/byte/late__Req.cmo -c -impl lib/req.ml)
+$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlc.opt -short-paths -keep-locs -warn-error +a -g -a -o lib/late.cma lib/.late.objs/byte/late.cmo lib/.late.objs/byte/late__Req.cmo)
+$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlopt.opt -short-paths -keep-locs -warn-error +a -g -I lib/.late.objs/byte -I lib/.late.objs/native -cmi-file lib/.late.objs/byte/late__Req.cmi -no-alias-deps -opaque -open Late -o lib/.late.objs/native/late__Req.cmx -c -impl lib/req.ml)
+$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlopt.opt -short-paths -keep-locs -warn-error +a -g -a -o lib/late.cmxa lib/.late.objs/native/late.cmx lib/.late.objs/native/late__Req.cmx)
+$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlopt.opt -short-paths -keep-locs -warn-error +a -g -shared -linkall -I lib -o lib/late.cmxs lib/late.cmxa)
+$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlopt.opt -short-paths -keep-locs -warn-error +a -g -o bin/main.exe lib/late.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /Users/pedro/.opam/cs4160/bin/ocamlopt.opt -short-paths -keep-locs -warn-error +a -g -o test/test_late.exe lib/late.cmxa test/.test_late.eobjs/native/dune__exe__Test_late.cmx)

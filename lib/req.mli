@@ -11,5 +11,12 @@ type req =
   ; qty : int
   }
 
-val add : t -> t * req list
-val cancel : t -> int -> t * bool
+type hit =
+  { inc_id : int
+  ; rest_id : int
+  ; price : int
+  ; qty : int
+  }
+
+val add : t -> req -> hit list
+val cancel : t -> int -> unit

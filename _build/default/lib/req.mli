@@ -1,13 +1,15 @@
-(* type side =
+type t
+
+type side =
   | Buy
   | Sell
 
-type t =
+type req =
   { id : int
   ; side : side
   ; price : int
   ; qty : int
   }
 
-val add : t -> t list * t
-val cancel : t -> int -> bool -> t *)
+val add : t -> req -> req list
+val cancel : t -> int -> unit
